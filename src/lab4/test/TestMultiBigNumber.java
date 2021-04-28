@@ -1,0 +1,111 @@
+package lab4.test;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+import lab4.MyBigNumber;
+public class TestMultiBigNumber {
+	@Test
+	public void testMulti() {
+		assertEquals(MyBigNumber.multi("81281","6"), "487686");
+		assertEquals(MyBigNumber.multi("9299","215567"), "2004557533");
+		assertEquals(MyBigNumber.multi("7","2259"), "15813");
+		assertEquals(MyBigNumber.multi("8","53"), "424");
+		assertEquals(MyBigNumber.multi("76585","3"), "229755");
+		assertEquals(MyBigNumber.multi("4","42"), "168");
+		assertEquals(MyBigNumber.multi("63","3424279"), "215729577");
+		assertEquals(MyBigNumber.multi("29","9821"), "284809");
+		assertEquals(MyBigNumber.multi("5337","4684"), "24998508");
+		assertEquals(MyBigNumber.multi("4243","483"), "2049369");
+		assertEquals(MyBigNumber.multi("432","852575"), "368312400");
+		assertEquals(MyBigNumber.multi("47465","735"), "34886775");
+		assertEquals(MyBigNumber.multi("87257","329"), "28707553");
+		assertEquals(MyBigNumber.multi("885","45393"), "40172805");
+		assertEquals(MyBigNumber.multi("96","1"), "96");
+		
+		assertEquals(MyBigNumber.multi("75319972955824686173","186924556515862537"), "14079152541554289412490475724432600901");
+		assertEquals(MyBigNumber.multi("963","86924265369"), "83708067550347");
+		assertEquals(MyBigNumber.multi("349885495245765","73"), "25541641152940845");
+		assertEquals(MyBigNumber.multi("8697","38938935279561194667"), "338651920126343710018899");
+		assertEquals(MyBigNumber.multi("575817763","2416441583935674444344"), "1391429987282016794438430082472");
+		assertEquals(MyBigNumber.multi("49553139651494481","3473375"), "172116636437009642943375");
+		assertEquals(MyBigNumber.multi("48962757856127857142","83648927527167825677"), "4095682183437506222901959074057415435134");
+		assertEquals(MyBigNumber.multi("97788969","638136"), "62402661521784");
+		assertEquals(MyBigNumber.multi("24","62848795223789899878615"), "1508371085370957597086760");
+		assertEquals(MyBigNumber.multi("2726725","342977"), "935203960325");
+		assertEquals(MyBigNumber.multi("543","2"), "1086");
+		assertEquals(MyBigNumber.multi("73189","95779671"), "7010018340819");
+		assertEquals(MyBigNumber.multi("893431632682565","459725961"), "410733715922791202569965");
+		assertEquals(MyBigNumber.multi("4","5658359552"), "22633438208");
+		assertEquals(MyBigNumber.multi("3925","19135992621152"), "75108771038021600");
+		assertEquals(MyBigNumber.multi("433656245978332639","63753515242"), "27647110087768131102232583638");
+		assertEquals(MyBigNumber.multi("7412229328729273964","53788734423371766558"), "398694434848146100299852795467435295912");
+		assertEquals(MyBigNumber.multi("9428367136464775","171962396766"), "1621324610376270905132917650");
+		assertEquals(MyBigNumber.multi("56772264537159111747","125241791857534646826"), "7110260138443777026548402122331512865022");
+		assertEquals(MyBigNumber.multi("777222325182962575","656958694246"), "510602963891039096317885843450");
+		assertEquals(MyBigNumber.multi("78978852293459669","15414135293441291167438"), "1217390714572103346936492198104979058022");
+		assertEquals(MyBigNumber.multi("36694871958917616","9747486528829"), "357682770096654480275819951664");
+		assertEquals(MyBigNumber.multi("872727988","9"), "7854551892");
+		assertEquals(MyBigNumber.multi("931736687193286458","8355812399185877"), "7785416963626035915520619248953666");
+		assertEquals(MyBigNumber.multi("76666665472168939","72669348677983237"), "5571316645175342969799002674075543");
+		assertEquals(MyBigNumber.multi("476785462","98843791644"), "47127282864816279528");
+		assertEquals(MyBigNumber.multi("372112869522233","9"), "3349015825700097");
+		assertEquals(MyBigNumber.multi("1968686955432933788","3592457523827"), "7072424265105112820804523366676");
+		assertEquals(MyBigNumber.multi("175724755992364","199575914"), "35070428789603022320696");
+		assertEquals(MyBigNumber.multi("7638575178428","145855634862723"), "1114129232096253557010939444");
+
+		assertEquals(MyBigNumber.multi("9255912327766919529","491895943967451147253871"), "4552945731746876966301924812550265390746759");
+		assertEquals(MyBigNumber.multi("758555997795628","53816398494727991383"), "40822751857935524248902416179073524");
+		assertEquals(MyBigNumber.multi("61181156687684261","73372519438254592917489"), "4489015608322013424605634497603256940629");
+		assertEquals(MyBigNumber.multi("48529448894122295","628288571447275247876979"), "30490498118811648308242178906050341146805");
+		assertEquals(MyBigNumber.multi("53317728846823916","79812276597268623785"), "4255409322260878638877131377544442060");
+		assertEquals(MyBigNumber.multi("163312252373699","74524614242848316771167"), "12170782609280607324246824567152336733");
+		assertEquals(MyBigNumber.multi("3945922346132434816","5574354273637882595896668"), "21995969093606558229821196800360305581593088");
+		assertEquals(MyBigNumber.multi("598384347184266521","4662744339967892415546"), "2790113227958820981881070645576947735466");
+		assertEquals(MyBigNumber.multi("83411158641879294","2498628187481686499281817"), "208413472133106271647307092402430202997198");
+		assertEquals(MyBigNumber.multi("77963111631682583767","592259776679866244385876"), "46174415084247809470613499481872809841674892");
+		assertEquals(MyBigNumber.multi("745791777512887296","9199192666789694225992"), "6860682250648603994342008540019849797632");
+		assertEquals(MyBigNumber.multi("194366641972959","421737916545439392154818"), "81971782631609080066347892177897566462");
+		assertEquals(MyBigNumber.multi("4125697926875934882","3842385428488378899828947"), "15852521596572805569027936002656880510629254");
+		assertEquals(MyBigNumber.multi("13632373357631585","625424317912896392751"), "8526017808730675249069157003322640335");
+		assertEquals(MyBigNumber.multi("7341577847153228332","637445245391689285744775"), "4679853892340779569823792271916368250965300");
+		assertEquals(MyBigNumber.multi("643447933217511","68284"), "43937198671824521124");
+		assertEquals(MyBigNumber.multi("51157393877231375492","7432"), "380201751295583582656544");
+		assertEquals(MyBigNumber.multi("79415762798361994","3737"), "296776705577478771578");
+		assertEquals(MyBigNumber.multi("33146714367938918","8956"), "296861973879260949608");
+		assertEquals(MyBigNumber.multi("76994685472578941","246"), "18940692626254419486");
+		assertEquals(MyBigNumber.multi("379878888727284","42"), "15954913326545928");
+		assertEquals(MyBigNumber.multi("998244236951696","61452"), "61344104849155622592");
+		assertEquals(MyBigNumber.multi("57359917734875369","81638"), "4682748964039755374422");
+		assertEquals(MyBigNumber.multi("94259354284664624634","481"), "45338749410923684448954");
+		assertEquals(MyBigNumber.multi("174292862819632149","3784"), "659524192909488051816");
+		assertEquals(MyBigNumber.multi("75883454544915882775","99"), "7512461999946672394725");
+		assertEquals(MyBigNumber.multi("98731322946429672473","38"), "3751790271964327553974");
+		assertEquals(MyBigNumber.multi("18939178287469947","4648"), "88029300680160313656");
+		assertEquals(MyBigNumber.multi("37968798765878887251","782"), "29691600634917289830282");
+		assertEquals(MyBigNumber.multi("52468968568931328","8416"), "441578839476126056448");
+
+	}
+	@Test
+	public void testMultiOne() {
+		assertEquals(MyBigNumber.multiOne("87143",2), "174286");
+		assertEquals(MyBigNumber.multiOne("431",2), "862");
+		assertEquals(MyBigNumber.multiOne("4",4), "16");
+		assertEquals(MyBigNumber.multiOne("6383",6), "38298");
+		assertEquals(MyBigNumber.multiOne("97233",2), "194466");
+		assertEquals(MyBigNumber.multiOne("78",3), "234");
+		assertEquals(MyBigNumber.multiOne("97",7), "679");
+		assertEquals(MyBigNumber.multiOne("8598",4), "34392");
+		assertEquals(MyBigNumber.multiOne("12",5), "60");
+		assertEquals(MyBigNumber.multiOne("356",5), "1780");
+		assertEquals(MyBigNumber.multiOne("17719",5), "88595");
+		assertEquals(MyBigNumber.multiOne("56",2), "112");
+		assertEquals(MyBigNumber.multiOne("33963",4), "135852");
+		assertEquals(MyBigNumber.multiOne("4249",3), "12747");
+		assertEquals(MyBigNumber.multiOne("22157",8), "177256");
+		assertEquals(MyBigNumber.multiOne("22134",9), "199206");
+		assertEquals(MyBigNumber.multiOne("48",2), "96");
+		
+	}
+}
