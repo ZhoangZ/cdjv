@@ -5,7 +5,7 @@ import model.RandomUtils;
 
 public class MainDivBigNumber {
 	public static void main(String[] args) {
-		for (int i = 0; i < 15; i++) {
+		for (int i = 0; i < 200; i++) {
 			String number1 = RandomUtils.randomNumber(3, 2);
 			//number1 = "91942";
 			String number2 = RandomUtils.randomNumber(2, 1);

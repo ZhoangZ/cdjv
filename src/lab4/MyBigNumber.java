@@ -7,21 +7,23 @@ import org.junit.Test;
 public class MyBigNumber {
 	@Test
 	public  void bug() {
-		assertArrayEquals(MyBigNumber.div("43832834152","61"), new String[]{"718571051","41"});
+		assertArrayEquals(MyBigNumber.div("66","3"), new String[]{"22","0"});
+
 	}
 	public static String[] div(String dividend, String divisor) {
 		dividend = delete0(dividend);
 		divisor = delete0(divisor);
 		if (compare(divisor, "1") == 0)
 			return new String[] {dividend,""+0};
+		boolean flagStop=false;
 		if (compare(dividend, divisor) >= 0) {
 			String remander = dividend;
 			String result = "";
 			int lengthTmp=divisor.length()-1;
-			while (compare(remander, divisor) >= 0) {
-//				if(compare(result, "718571")==0) {
-//					System.out.println("fla");
-//				}
+			while (!flagStop) {
+				if(lengthTmp+1>remander.length()) {
+					break;
+				}
 				String tmp = remander.substring(0, lengthTmp+1);
 				int compareFlag = compare(tmp, divisor);
 				if (compareFlag == 0) {
@@ -31,13 +33,11 @@ public class MyBigNumber {
 						result+='0';
 						break;
 					}
+					tmp = remander.substring(0, divisor.length());
 					//continue;
 				} else if (compareFlag == -1) {
-					//result += "0";
-					//tmp = tmp + remander.substring(tmp.length(),tmp.length()+1);
-					//continue;
 				}
-				
+				boolean flag2=false;
 				for (int i = 9; i >= 0; i--) {
 					String tmp2 = multiOne(divisor, i);
 					compareFlag = compare(tmp, tmp2);
@@ -46,11 +46,16 @@ public class MyBigNumber {
 						String t2 = sub(tmp, tmp2);
 						remander = t2 + remander.substring(tmp.length());
 						lengthTmp=t2.length();
+						flag2=true;
 						break;
 					} 
-					else {
-						if(i==0)
-						result += '0';
+					
+				}
+				if(!flag2) {
+					result += '0';
+					flag2=false;
+					if(compare(remander, divisor)<=0) {
+						flagStop=true;
 					}
 				}
 			}
