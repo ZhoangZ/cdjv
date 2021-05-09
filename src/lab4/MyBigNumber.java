@@ -1,13 +1,14 @@
 package lab4;
 
 import static org.junit.Assert.assertArrayEquals;
+import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
 public class MyBigNumber {
 	@Test
 	public  void bug() {
-		assertArrayEquals(MyBigNumber.div("66","3"), new String[]{"22","0"});
+		assertEquals(MyBigNumber.plus("91942","5"), "91937");
 
 	}
 	public static String[] div(String dividend, String divisor) {
@@ -31,6 +32,9 @@ public class MyBigNumber {
 					remander = remander.substring(tmp.length());
 					if(compare(remander, divisor)<0) {
 						result+='0';
+						if(compare(remander, "0")==0||compare(remander, "")==0) {
+							result=result.substring(0, result.length()-1);
+						}
 						break;
 					}
 					tmp = remander.substring(0, divisor.length());
@@ -56,6 +60,9 @@ public class MyBigNumber {
 					flag2=false;
 					if(compare(remander, divisor)<=0) {
 						flagStop=true;
+					}
+					if(compare(remander, "0")==0||compare(remander, "")==0) {
+						result=result.substring(0, result.length()-1);
 					}
 				}
 			}
@@ -196,6 +203,7 @@ public class MyBigNumber {
 		if (number1.length() > number2.length()
 				|| (number1.charAt(0) >= number2.charAt(0) && number1.length() == number2.length())) {
 			number1 = add0(number1);
+			//number2 = add0(number2);
 			int indexNumber1 = number1.length() - 1;
 			int indexNumber2 = number2.length() - 1;
 			boolean memory = false;
