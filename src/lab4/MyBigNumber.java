@@ -1,6 +1,5 @@
 package lab4;
 
-import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
@@ -8,7 +7,7 @@ import org.junit.Test;
 public class MyBigNumber {
 	@Test
 	public  void bug() {
-		assertEquals(MyBigNumber.plus("91942","5"), "91937");
+		assertEquals(MyBigNumber.sub("12", "13"), "-1");
 
 	}
 	public static String[] div(String dividend, String divisor) {
@@ -200,8 +199,8 @@ public class MyBigNumber {
 	public static String sub(String number1, String number2) {
 		number1 = delete0(number1);
 		number2 = delete0(number2);
-		if (number1.length() > number2.length()
-				|| (number1.charAt(0) >= number2.charAt(0) && number1.length() == number2.length())) {
+		if (compare(number1, number2)==0)return "0";
+		if (compare(number1, number2)>0) {
 			number1 = add0(number1);
 			//number2 = add0(number2);
 			int indexNumber1 = number1.length() - 1;

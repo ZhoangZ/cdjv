@@ -10,7 +10,7 @@ public class TestSubBigNumber {
 
 	@Test
 	public void test() {
-		assertEquals(MyBigNumber.sub("2444", "945619"), "-943175");
+		assertEquals(MyBigNumber.sub("12", "13"), "-1");
 	}
 	@Test
 	public void testSubMini() {
